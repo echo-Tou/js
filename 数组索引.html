@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 返回数组元素索引号方法 indexOf(数组元素) 作用是返回数组元素的索引号
+        // 他只返回第一个满足条件的索引号
+        // 他如果在该数组里面找不到元素，则返回的是 -1
+
+        var arr = ['red', 'green', 'blue', 'pink', 'blue'];
+        console.log(arr.indexOf('blue'));
+
+        // 返回数组元素索引方法 lastIndexOf(数组元素)  作用就是返回该数组元素的索引号
+        var arr = ['red', 'green', 'blue', 'pink', 'blue'];
+        console.log(arr.lastIndexOf('blue')); // 4
+
+
+        // 字符串对象 根据字符返回位置 str.indexOf('要查找的字符', [起始的位置])
+        var str = '改革春风吹满地, 春天来了';
+        console.log(str.indexOf('春'));
+        console.log(str.indexOf('春', 3)); // 从索引号是 3的位置开始往后查找
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
