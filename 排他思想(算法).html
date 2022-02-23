@@ -21,10 +21,17 @@
         // btns得到的是伪数组
         for (var i = 0; i < btns.length; i++) {
             btns[i].onblur = function() {
+                // (1) 我们先把所有得按钮背景颜色去掉  
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].style.backgroundColor = '';
+
+                }
+                // (2) 然后才让当前得元素背景颜色为pink 
                 this.style.backgroundColor = 'pink';
             }
 
         }
+        // 2. 首先先排除其他人 然后才设置自己得样式 这种排除其他人得思想我们称为排他思想
     </script>
 </body>
 
