@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // setinterval() 方法重复调用一个函数,每隔这段时间,就去调用一次回调函数
+        // 语法规范 window.setinterval(调用函数, 延时时间)
+
+        setInterval(function() {
+            console.log('继续输出');
+        }, 1000);
+
+        // setTimeout 延时时间到了,就去调用这个回调函数,只调用一次 就结束了这个定时器
+        // setInterval 每隔这个延时时间,就去调用这个回调函数,会调用很多次,重复调用这个函数
+    </script>
+</body>
+
+</html>
